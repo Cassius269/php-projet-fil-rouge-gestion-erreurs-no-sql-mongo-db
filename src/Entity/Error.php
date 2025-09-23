@@ -6,6 +6,7 @@ use App\Entity\Trait\DescriptionTrait;
 use App\Entity\Trait\IdentifierTrait;
 use App\Entity\Trait\TitleTrait;
 use DateTrait;
+use App\Entity\Category;
 
 class Error { 
     // Importation des traits
