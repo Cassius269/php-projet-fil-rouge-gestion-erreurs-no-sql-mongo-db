@@ -1,0 +1,6 @@
+# Configuration de serveur Apache pour rediriger chaque requête au script principal index.php
+
+RewriteEngine on # activer le module de réecriture d'URL
+
+RewriteCond %{REQUEST_FILENAME} !-f # condition principale: les fichiers seront servis au client par défaut
+RewriteRule ^(.*)$ index.php [QSA,L] # sinon autrement toutes les requêtes sont redirigées vers le  script index.php
